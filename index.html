@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Conatct</li>
+        </ul>
+        <div class="search">
+            <input type="search">
+        </div>
+    </div>
+
+    <div class="loading-container">
+        <div class="loading"></div>
+    </div>
+
+    <script>
+        // Simulate loading completion after a delay
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+        }, 3000); // Adjust the delay as needed
+    </script>
+</body>
+</html>
